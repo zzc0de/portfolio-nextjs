@@ -39,6 +39,10 @@ export const iconPattern = [
     type: "icon",
     path: "/icon/nextjs.svg",
   },
+  {
+    type: "icon",
+    path: "/icon/vite.svg",
+  },
 ];
 
 export const skillPattern = [

@@ -5,7 +5,7 @@ import Card from "../atoms/Card";
 
 const Skills = () => {
   return (
-    <div className="h-screen flex flex-col w-full gap-10">
+    <div className="h-screen flex flex-col w-full gap-10 max-w-screen-xl mx-auto">
       <h1 className="text-center text-4xl">
         My<span className="font-bold"> Skills</span>
       </h1>

@@ -10,7 +10,7 @@ const fraunces = Fraunces({
 
 const HeroSection = () => {
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex max-w-screen-xl mx-auto">
       <div className="flex-1 h-full flex justify-center items-center flex-col gap-4">
         {profilePattern.map((item, index) =>
           item.type === "title" ? (
