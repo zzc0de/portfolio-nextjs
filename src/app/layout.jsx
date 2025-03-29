@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Section from "@/components/atoms/Section";
 import Navbar from "@/components/molecules/Navbar";
 
 const inter = Inter({
@@ -16,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${inter.variable}`}>
+      <body className={inter.className}>
         <Navbar />
         {children}
       </body>

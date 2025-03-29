@@ -1,5 +1,6 @@
 import Section from "@/components/atoms/Section";
 import About from "@/components/organism/About";
+import Contact from "@/components/organism/Contact";
 import HeroSection from "@/components/organism/HeroSection";
 import Project from "@/components/organism/Project";
 import Skills from "@/components/organism/Skills";
@@ -18,6 +19,9 @@ export default function Home() {
       </Section>
       <Section index={4}>
         <Project />
+      </Section>
+      <Section index={5}>
+        <Contact />
       </Section>
     </>
   );
