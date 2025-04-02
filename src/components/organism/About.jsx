@@ -8,7 +8,7 @@ const About = () => {
         <Image
           src={"/profile.svg"}
           width={500}
-          height={400}
+          height={300}
           priority
           className="invert"
           alt="profile"
