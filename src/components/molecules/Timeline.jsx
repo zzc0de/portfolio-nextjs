@@ -27,7 +27,7 @@ const Timeline = ({ pattern }) => {
           </div>
           {item?.buttonLink && (
             <Link
-              className="bg-black w-fit rounded-sm text-white py-1 px-6 hover:bg-white hover:text-black hover:border-1 transition duration-500"
+              className="bg-black w-fit rounded-sm text-white py-1 px-6 hover:bg-white hover:text-black border-1 transition duration-500"
               href={item?.buttonLink}
             >
               {item.buttonText}

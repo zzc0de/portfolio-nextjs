@@ -1,7 +1,6 @@
 import { profilePattern, socialMediaPattern } from "@/pattern/heroPattern";
 import Image from "next/image";
 import Link from "next/link";
-import BlurText from "../atoms/BlurText";
 import { Fraunces } from "next/font/google";
 import SplitText from "../atoms/SplitText";
 import AnimatedContent from "../atoms/AnimatedContent";

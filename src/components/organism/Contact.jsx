@@ -1,8 +1,9 @@
-import Card from "../atoms/Card";
 import GradientText from "../atoms/GradientText";
 import Lanyard from "../atoms/Lanyard";
 import { FaInstagram } from "react-icons/fa6";
 import StarBorder from "../atoms/StarBorder";
+import { contactListPattern } from "@/pattern/contactPattern";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -16,17 +17,22 @@ const Contact = () => {
         >
           Get In Touch
         </GradientText>
-        {/* <Card
-          className={
-            "border-2 p-2 min-w-1/2 flex gap-4 rounded-sm items-center font-semibold hover:text-white hover:border-black shadow-md bg-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-yellow-500 transition duration-500"
-          }
-        >
-          <FaInstagram size={35} />
-          <p>Instagram DM</p>
-        </Card> */}
-        <StarBorder as="button" color="cyan" speed="6s">
-          Hahaaha
-        </StarBorder>
+        <div className="w-full flex flex-col gap-4">
+          {contactListPattern.map((item, index) => (
+            <Link href={item.link}>
+              <StarBorder
+                as="button"
+                color="cyan"
+                speed="6s"
+                key={index}
+                className="hover:scale-101 transition duration-500 w-full"
+              >
+                <item.icon size={35} />
+                <p>{item.desc}</p>
+              </StarBorder>
+            </Link>
+          ))}
+        </div>
       </div>
       <div className="flex-1 h-full flex justify-center items-center">
         <Lanyard />
