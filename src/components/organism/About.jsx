@@ -3,14 +3,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="h-screen flex max-w-screen-xl mx-auto text-white">
+    <div className="h-screen flex max-w-screen-xl mx-auto">
       <div className="flex-1 h-full flex justify-center items-center">
         <Image
           src={"/profile.svg"}
           width={500}
           height={300}
           priority
-          className="invert"
           alt="profile"
         />
       </div>

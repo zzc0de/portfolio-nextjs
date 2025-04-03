@@ -1,6 +1,6 @@
 const Card = ({ children, className, ...props }) => {
   return (
-    <div className={`border-2 rounded-md p-6 ${className}`} {...props}>
+    <div className={`rounded-md p-2 ${className || "border-2"}`} {...props}>
       {children}
     </div>
   );

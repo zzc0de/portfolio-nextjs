@@ -20,8 +20,8 @@ const HeroSection = () => {
         {profilePattern.map((item, index) => (
           <SplitText
             text={item.content}
-            className={`text-5xl font-semibold ${fraunches.className}`}
-            delay={150}
+            className={`text-5xl text-white font-semibold ${fraunches.className}`}
+            delay={100}
             textAlign="left"
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
             animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
@@ -40,7 +40,7 @@ const HeroSection = () => {
         >
           <div className="w-full flex gap-4">
             {socialMediaPattern.map((item, index) => (
-              <Link key={index} href={item.href}>
+              <Link key={index} href={item.href} className="text-white">
                 {item.icon}
               </Link>
             ))}
@@ -53,6 +53,7 @@ const HeroSection = () => {
           width={800}
           height={800}
           priority
+          className="invert"
           alt="binary"
         />
       </div>

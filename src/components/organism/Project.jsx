@@ -3,7 +3,7 @@ import Timeline from "../molecules/Timeline";
 
 const Project = () => {
   return (
-    <div className="w-full flex flex-col min-h-screen mx-auto max-w-screen-xl text-white">
+    <div className="w-full flex flex-col min-h-screen mx-auto max-w-screen-xl ">
       <div className="w-full py-6 flex flex-col gap-4">
         <h1 className="text-3xl">
           My <span className="font-bold">Projects</span>

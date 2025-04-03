@@ -1,6 +1,8 @@
+import Card from "../atoms/Card";
 import GradientText from "../atoms/GradientText";
 import Lanyard from "../atoms/Lanyard";
 import { FaInstagram } from "react-icons/fa6";
+import StarBorder from "../atoms/StarBorder";
 
 const Contact = () => {
   return (
@@ -14,10 +16,17 @@ const Contact = () => {
         >
           Get In Touch
         </GradientText>
-        <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500 p-4 min-w-1/2 flex gap-4 rounded-lg items-center">
+        {/* <Card
+          className={
+            "border-2 p-2 min-w-1/2 flex gap-4 rounded-sm items-center font-semibold hover:text-white hover:border-black shadow-md bg-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-yellow-500 transition duration-500"
+          }
+        >
           <FaInstagram size={35} />
           <p>Instagram DM</p>
-        </div>
+        </Card> */}
+        <StarBorder as="button" color="cyan" speed="6s">
+          Hahaaha
+        </StarBorder>
       </div>
       <div className="flex-1 h-full flex justify-center items-center">
         <Lanyard />

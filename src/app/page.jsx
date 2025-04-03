@@ -8,19 +8,19 @@ import Skills from "@/components/organism/Skills";
 export default function Home() {
   return (
     <>
-      <Section index={1}>
+      <Section index={2}>
         <HeroSection />
       </Section>
-      <Section index={2}>
+      <Section index={1}>
         <About />
       </Section>
-      <Section index={3} className="py-4">
+      <Section index={2} className="py-4">
         <Skills />
       </Section>
-      <Section index={4}>
+      <Section index={1}>
         <Project />
       </Section>
-      <Section index={5}>
+      <Section index={2}>
         <Contact />
       </Section>
     </>

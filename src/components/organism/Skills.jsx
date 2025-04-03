@@ -31,7 +31,7 @@ const Skills = () => {
       <div className="w-full grid grid-cols-2 gap-6 h-full">
         {skillPattern.map((item, index) => (
           <Card
-            className="transition duration-500 flex flex-col gap-4 hover:bg-black hover:text-white"
+            className="transition p-6 border-2 duration-500 flex flex-col gap-4 text-white hover:bg-white hover:text-black"
             key={index}
           >
             <h1 className="text-xl font-bold">{item.name}</h1>
